@@ -1,0 +1,21 @@
+/* ---------- アニメーション ---------- */
+/* フェードイン */
+.fadein {
+    opacity: 0;
+    transform: translateY(30px); /* 30px 下に隠す */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fadein.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ぷくっとふくらむ */
+.expand {
+  transform: scale(0); 
+  transition: transform 0.5s ease-out;
+}
+.expand.show {
+  transform: scale(1); /* 2倍のサイズに拡大 */
+}
+/* ---------- アニメーション END ---------- */
