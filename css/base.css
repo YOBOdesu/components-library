@@ -14,6 +14,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: block; /* inlineだとline-heightの影響で下に空白ができるので対策 */
 }
 /* ---------- サイト全体の共通スタイル END ---------- */
