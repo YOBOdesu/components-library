@@ -1,3 +1,3 @@
 # components-library
 
-練習用
+再利用素材集
