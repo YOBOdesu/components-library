@@ -1,0 +1,21 @@
+/* ---------- レイアウト ---------- */
+/* 汎用ブロック */
+.media-block {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+.media-content {
+  position: relative;
+  z-index: 1; /* コンテンツを前面に表示 */
+}
+
+/* 汎用背景 */
+.media-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+/* ---------- レイアウト END ---------- */

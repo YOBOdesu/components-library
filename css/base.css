@@ -7,13 +7,14 @@
 /* リンクの装飾を削除 */
 a {
   text-decoration: none;
-  color: inherit;
+  /*color: inherit;*/ /* 親要素の色を引き継ぐ */
 }
 
-/* 画像が親要素をはみ出さないように */
+/* 画像 */
 img {
   max-width: 100%;
+  min-width: 0; /* flexやgridの中でもちゃんと縮んでね！ */
   height: auto;
-  display: block; /* inlineだとline-heightの影響で下に空白ができるので対策 */
+  display: block; /* 不要な隙間をなくす（インライン扱いを解除） */
 }
 /* ---------- サイト全体の共通スタイル END ---------- */
