@@ -1,0 +1,31 @@
+/* スライダー全体 */
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* スライダーの中身を横並びに */
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.slider-track img {
+  width: 300px; /* サイズ　自由に変更可 */
+  height: 180px; /* サイズ　自由に変更可 */
+  flex-shrink: 0;
+  margin-right: 10px;
+  object-fit: cover;
+  /*border-radius: 8px;*/ /* 角丸　自由に変更可 */
+}
+
+/* アニメーション */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

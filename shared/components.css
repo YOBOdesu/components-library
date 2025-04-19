@@ -1,0 +1,7 @@
+/* ---------- コンポーネント ---------- */
+/*飾り線*/
+.line-01 {
+  height: 1px;
+  background-color: #ccc;
+  margin: 1rem 0;
+}
