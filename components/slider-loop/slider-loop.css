@@ -1,18 +1,18 @@
 /* スライダー全体 */
-.slider {
+.slider-loop {
   overflow: hidden;
   width: 100%; /* サイズ（変更可） */
 }
 
 /* スライダーの中身を横並びに */
-.slider-track {
+.slider-loop-track {
   display: flex;
   width: max-content;
   gap: 10px; /* 画像間のスペース（変更可） */
   animation: scroll 20s linear infinite; /* スクロールのスピード（変更可） */
 }
 
-.slider-track img {
+.slider-loop-track img {
   width: 500px; /* サイズ（変更可） */
   height: 300px; /* サイズ（変更可） */
   flex-shrink: 0;
