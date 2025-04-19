@@ -1,23 +1,23 @@
 /* スライダー全体 */
 .slider {
   overflow: hidden;
-  width: 100%;
+  width: 100%; /* サイズ（変更可） */
 }
 
 /* スライダーの中身を横並びに */
 .slider-track {
   display: flex;
   width: max-content;
-  animation: scroll 20s linear infinite;
+  gap: 10px; /* 画像間のスペース（変更可） */
+  animation: scroll 20s linear infinite; /* スクロールのスピード（変更可） */
 }
 
 .slider-track img {
-  width: 300px; /* サイズ　自由に変更可 */
-  height: 180px; /* サイズ　自由に変更可 */
+  width: 500px; /* サイズ（変更可） */
+  height: 300px; /* サイズ（変更可） */
   flex-shrink: 0;
-  margin-right: 10px;
   object-fit: cover;
-  /*border-radius: 8px;*/ /* 角丸　自由に変更可 */
+  border-radius: 8px; /* 角丸（変更可） */
 }
 
 /* アニメーション */
