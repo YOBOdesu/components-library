@@ -1,0 +1,31 @@
+.card-01-wrap {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-01 {
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  transition: 0.3s ease;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.card-01--a {
+  background-color: #f8a13d;
+}
+.card-01--b {
+  background-color: #e0b800;
+}
+.card-01--c {
+  background-color: #d4a017;
+}
+
+.card-01__image img {
+  border-radius: 8px;
+}

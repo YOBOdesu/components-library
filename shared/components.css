@@ -1,7 +1,40 @@
-/* ---------- コンポーネント ---------- */
-/*飾り線*/
+/* ---------- 飾り線 ---------- */
 .line-01 {
   height: 1px;
   background-color: #ccc;
   margin: 1rem 0;
 }
+/* ---------- /飾り線 ---------- */
+
+/* ---------- 〇→ボタン ---------- */
+.circle-zoom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-top: 20px; /* テキストとの間隔を調整 */
+  position: relative; /* relativeなので高さをもつ */
+}
+
+.circle-zoom-btn__bg {
+  position: absolute;
+  inset: 0;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.circle-zoom-btn__icon {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f8a13d;
+  z-index: 1;
+}
+
+.card-01:hover .circle-zoom-btn__bg {
+  transform: scale(1.3);
+}
+/* ---------- /〇→ボタン ---------- */
