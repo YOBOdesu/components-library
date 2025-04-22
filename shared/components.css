@@ -30,11 +30,14 @@
   position: relative;
   font-size: 20px;
   font-weight: bold;
-  color: #f8a13d;
+  color: #222;
   z-index: 1;
 }
 
+/* ホバーの挙動 */
+/*
 .card-01:hover .circle-zoom-btn__bg {
   transform: scale(1.3);
 }
+*/
 /* ---------- /〇→ボタン ---------- */
