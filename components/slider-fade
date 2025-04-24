@@ -1,0 +1,5 @@
+<div class="slider-fade">
+  <img src="https://raw.githubusercontent.com/YOBOdesu/components-library/refs/heads/main/assets/sample-01.jpg" class="slide-item" />
+  <img src="https://raw.githubusercontent.com/YOBOdesu/components-library/refs/heads/main/assets/sample-02.jpg" class="slide-item" />
+  <img src="https://raw.githubusercontent.com/YOBOdesu/components-library/refs/heads/main/assets/sample-03.jpg" class="slide-item" />
+</div>
