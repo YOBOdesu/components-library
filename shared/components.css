@@ -6,45 +6,53 @@
 }
 /* ---------- /飾り線 ---------- */
 
-/* ---------- 〇→ボタン ---------- */
-.circle-zoom-btn {
+/* ---------- 〇ボタン ---------- */
+.circle-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
-  margin-top: 20px; /* テキストとの間隔を調整 */
-  position: relative; /* relativeなので高さをもつ */
+  width: 48px; /* （背景を含めた）アイコンの幅 */
+  height: 48px; /* （背景を含めた）アイコンの高さ */
+  position: relative;
 }
 
-.circle-zoom-btn__bg {
+.circle-btn__bg {
   position: absolute;
   inset: 0;
   background: white;
   border-radius: 50%;
-  transition: transform 0.3s ease;
-  z-index: 0;
+  transition: all 0.3s ease;
 }
 
-.circle-zoom-btn__icon {
-  position: relative;
-  font-size: 20px;
-  font-weight: bold;
-  color: #222;
-  z-index: 1;
+/* ---------- アイコン ---------- */
+/* チェックマークアイコン */
+.icon-check {
+  width: 24px; /* アイコンの幅 */
+  height: 24px; /* アイコンの高さ */
+  color: #222; /* アイコン線の色 */
+  position: relative; /* 背景がある場合、前面に設置（背景無しなら不要） */
+}
+
+/* 右向き矢印アイコン */
+.icon-arrow {
+  width: 24px; /* アイコンの幅 */
+  height: 24px; /* アイコンの高さ */
+  color: #222; /* アイコン線の色 */
+  position: relative; /* 背景がある場合、前面に設置（背景無しなら不要） */
+}
+
+/* シンプルな直線矢印アイコン */
+.icon--arrow-simple {
+  width: 24px; /* アイコンの幅 */
+  height: 24px; /* アイコンの高さ */
+  color: #222; /* アイコン線の色 */
+  position: relative; /* 背景がある場合、前面に設置（背景無しなら不要） */
 }
 
 /* ホバーの挙動 */
 /*
-.card-01:hover .circle-zoom-btn__bg {
+.card-01:hover .circle-btn__bg {
   transform: scale(1.3);
 }
 */
 /* ---------- /〇→ボタン ---------- */
-
-.icon-check {
-  width: 48px; /* （背景を含めた）アイコンの幅 */
-  height: 48px; /* （背景を含めた）アイコンの高さ */
-  padding: 8px; /* アイコンと背景の間隔 */
-  color: #00796b; /* アイコン線の色 */
-}

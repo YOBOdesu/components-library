@@ -2,7 +2,6 @@
 .card-01-wrap {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .card-01 {
@@ -12,23 +11,9 @@
   padding: 2rem;
   position: relative;
   transition: 0.3s ease;
-  flex: 1 1 calc(33.333% - 20px);
-  max-width: calc(33.333% - 20px);
-  box-sizing: border-box;
-}
-
-.card-01 .line-01 {
-  width: 20%;
-  background-color: #fff;
-}
-
-.card-01 h3 {
-  margin: 1rem 0 0 0;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.card-01 p {
-  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-01--a {
@@ -41,12 +26,27 @@
   background-color: #d4a017;
 }
 
+.card-01 .line-01 {
+  width: 20%;
+  background-color: #fff;
+}
+
+.card-01 h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 .card-01__image img {
   border-radius: 8px;
 }
 
+.circle-btn {
+  align-self: flex-end; /* 一番左に設置 */
+  margin-top: auto; /* 一番下に設置 */
+}
+
 /* ホバーの挙動 */
-.card-01:hover .circle-zoom-btn__bg {
+.card-01:hover .circle-btn__bg {
   transform: scale(1.3);
 }
 /* ---------- /カード01 ---------- */
