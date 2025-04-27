@@ -6,25 +6,7 @@
 }
 /* ---------- /飾り線 ---------- */
 
-/* ---------- 〇ボタン ---------- */
-.circle-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px; /* （背景を含めた）アイコンの幅 */
-  height: 48px; /* （背景を含めた）アイコンの高さ */
-  position: relative;
-}
-
-.circle-btn__bg {
-  position: absolute;
-  inset: 0;
-  background: white;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-/* ---------- アイコン ---------- */
+/* ---------- SVGアイコン ---------- */
 /* チェックマークアイコン */
 .icon-check {
   width: 24px; /* アイコンの幅 */
@@ -48,11 +30,29 @@
   color: #222; /* アイコン線の色 */
   position: relative; /* 背景がある場合、前面に設置（背景無しなら不要） */
 }
+/* ---------- /SVGアイコン ---------- */
+
+/* ---------- アイコンボタン ---------- */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px; /* （背景を含めた）アイコンの幅 */
+  height: 48px; /* （背景を含めた）アイコンの高さ */
+  position: relative;
+}
+
+.icon-btn__bg {
+  position: absolute;
+  inset: 0;
+  background: white;
+  border-radius: 50%;
+}
 
 /* ホバーの挙動 */
 /*
-.card-01:hover .circle-btn__bg {
+.card-01:hover .icon-btn__bg {
   transform: scale(1.3);
 }
 */
-/* ---------- /〇→ボタン ---------- */
+/* ---------- /アイコンボタン ---------- */

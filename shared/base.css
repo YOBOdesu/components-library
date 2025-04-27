@@ -16,5 +16,18 @@ img {
   min-width: 0; /* flexやgridの中でもちゃんと縮んでね！ */
   height: auto;
   display: block; /* 不要な隙間をなくす（インライン扱いを解除） */
+  pointer-events: none; /* クリックできないようにする */
 }
 /* ---------- サイト全体の共通スタイル END ---------- */
+
+body {
+  font-size: 16px;
+  line-height: 2.4;
+}
+
+/* スマホ用：画面幅768px以下でサイズダウン */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px; /* 例：少し小さく */
+  }
+}
