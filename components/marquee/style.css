@@ -1,6 +1,6 @@
 /* ---------- マーキー ---------- */
 .marquee-wrap {
-  width: 100%; /* マーキーの横幅（変更可） */
+  width: 100%; /* マーキーの横幅 */
   overflow: hidden;
   white-space: nowrap;
 }
@@ -8,11 +8,11 @@
 .marquee {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee 15s linear infinite; /* スクロールのスピード（変更可） */
+  animation: marquee 15s linear infinite; /* スクロールのスピード */
 }
 
 .marquee span {
-  font-size: 5rem; /* フォントサイズ（変更可） */
+  font-size: 5rem; /* フォントサイズ */
 }
 
 @keyframes marquee {
@@ -28,23 +28,23 @@
 /* ---------- マーキー（画像版） ---------- */
 .marquee-wrap-img {
   overflow: hidden;
-  width: 100%; /* マーキーの横幅（変更可） */
+  width: 100%; /* マーキーの横幅 */
 }
 
 /* スライダーの中身を横並びに */
 .marquee-track {
   display: flex;
   width: max-content;
-  gap: 10px; /* 画像間のスペース（変更可） */
-  animation: marquee-img 20s linear infinite; /* スクロールのスピード（変更可） */
+  gap: 10px; /* 画像間のスペース */
+  animation: marquee-img 20s linear infinite; /* スクロールのスピード*/
 }
 
 .marquee-track img {
-  width: 500px; /* 変更可 */
-  height: 300px; /* 変更可 */
+  width: 500px; /* 横幅 */
+  height: 300px; /* 縦幅 */
   flex-shrink: 0;
   object-fit: cover;
-  border-radius: 8px; /* 角丸（変更可） */
+  border-radius: 8px; /* 角丸 */
 }
 
 /* アニメーション */

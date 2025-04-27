@@ -2,7 +2,7 @@
 /* フェードスライダー全体の枠設定 */
 .slider-fade {
   position: relative;
-  width: 100%;
+  width: 100%; /* 横幅 */
   aspect-ratio: 16 / 9; /* 比率を変えたいときはここを調整 */
   overflow: hidden;
 }
