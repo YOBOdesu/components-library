@@ -5,11 +5,18 @@
   gap: 2rem; /* コンテンツの間隔 */
 }
 
-.service-01__content {
-  flex: 1; /* 文字欄の幅 */
+.service-01 .section-header * {
+  margin: 0; /* マージンリセット */
+  line-height: 1; /* 行間 */
+  font-weight: bold; /* フォントの太さ */
 }
 
-.service-01__content h3 {
+.section-header h3 {
+  font-size: 3rem; /* フォントサイズ */
+}
+
+.service-01__content {
+  flex: 1; /* 文字欄の幅 */
 }
 
 .slider-fade {
@@ -18,6 +25,9 @@
 }
 
 /* ---------- アイコンボタン ---------- */
+.icon-btn {
+  margin-left: auto; /* 一番左に設置 */
+}
 /* チェックマークアイコン */
 .icon-arrow {
   color: #fff; /* アイコン線の色 */
