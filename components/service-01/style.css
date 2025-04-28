@@ -1,0 +1,30 @@
+.service-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* コンテンツの間隔 */
+}
+
+.service-01__content {
+  flex: 1; /* 文字欄の幅 */
+}
+
+.service-01__content h3 {
+}
+
+.slider-fade {
+  margin-left: calc(50% - 50vw); /* スライダーの位置調整 */
+  flex: 3; /* スライダーの幅 */
+}
+
+/* ---------- アイコンボタン ---------- */
+/* チェックマークアイコン */
+.icon-arrow {
+  color: #fff; /* アイコン線の色 */
+}
+
+/* ボタン背景 */
+.icon-btn__bg {
+  background-color: #222; /* 背景色 */
+}
+/* ---------- /アイコンボタン ---------- */

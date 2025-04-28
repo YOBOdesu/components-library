@@ -11,7 +11,7 @@
 .icon-check {
   width: 24px; /* アイコンの幅 */
   height: 24px; /* アイコンの高さ */
-  color: #222; /* アイコン線の色 */
+  /*color: #222;  アイコン線の色 */
   position: relative; /* 背景がある場合、前面に設置（背景無しなら不要） */
 }
 
@@ -19,7 +19,7 @@
 .icon-arrow {
   width: 24px; /* アイコンの幅 */
   height: 24px; /* アイコンの高さ */
-  color: #222; /* アイコン線の色 */
+  /*color: #222;  アイコン線の色 */
   position: relative; /* 背景がある場合、前面に設置（背景無しなら不要） */
 }
 
@@ -27,7 +27,7 @@
 .icon--arrow-simple {
   width: 24px; /* アイコンの幅 */
   height: 24px; /* アイコンの高さ */
-  color: #222; /* アイコン線の色 */
+  /*color: #222;  アイコン線の色 */
   position: relative; /* 背景がある場合、前面に設置（背景無しなら不要） */
 }
 /* ---------- /SVGアイコン ---------- */
@@ -42,11 +42,12 @@
   position: relative;
 }
 
+/* ボタン背景 */
 .icon-btn__bg {
   position: absolute;
   inset: 0;
-  background: white;
-  border-radius: 50%;
+  /*background: #fff;  背景色 */
+  border-radius: 50%; /* 背景を丸く */
 }
 
 /* ホバーの挙動 */

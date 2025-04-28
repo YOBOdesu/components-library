@@ -58,15 +58,21 @@
   transition: transform 0.9s ease; /* アニメーション用 */
 }
 
-/* カード内ボタンの配置 */
+/* アイコンボタン */
 .icon-btn {
   align-self: flex-end; /* 一番左に設置 */
   margin-top: auto; /* 一番下に設置 */
 }
 
-/* カード内ボタンの背景 */
+/* チェックマークアイコン */
+.icon-arrow {
+  color: #fff; /* アイコン線の色 */
+}
+
+/* アイコンボタンの背景 */
 .icon-btn__bg {
   transition: 0.3s ease; /* アニメーション用 */
+  background-color: #222; /* 背景色 */
 }
 
 /* ホバーの挙動 */

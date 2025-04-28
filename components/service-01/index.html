@@ -11,36 +11,36 @@
     <svg style="display: none;">
         <!-- 右向き矢印アイコン（SVGスプライト定義） -->
         <symbol id="icon-arrow" viewBox="0 0 24 24">
-            <polyline points="8 4 16 12 8 20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+            <polyline points="8 4 16 12 8 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
         </symbol>
         <!-- /右向き矢印アイコン（SVGスプライト定義） -->
     </svg>
 </head>
 
-<body>
+<body style="width: 90%; max-width: 1000px; margin: 0 auto;">
     <h1>ビジネス-01</h1>
-    <!-- ---------- フェードスライダー ---------- -->
-    <section class="business-01">
-        <div class="business-01__content">
-            <h3>タイトル</h3>
-            <p>ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。</p>
-        </div>
-        <div class="icon-btn">
-            <div class="icon-btn__bg"></div>
-            <!-- 右向き矢印アイコン -->
-            <svg class="icon-arrow">
-                <use xlink:href="#icon-arrow"></use>
-            </svg>
-        </div>
+    <section class="service-01">
+        <!-- ---------- フェードスライダー ---------- -->
         <div class="slider-fade">
             <!-- ▼ ここに表示したい画像を追加または差し替え -->
             <img src="../../assets/sample-01.jpg" class="slide-item" />
             <img src="../../assets/sample-02.jpg" class="slide-item" />
             <img src="../../assets/sample-03.jpg" class="slide-item" />
         </div>
+        <!-- ---------- /フェードスライダー ---------- -->
+        <div class="service-01__content">
+            <h3>タイトル</h3>
+            <p>ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。ここに説明が入ります。</p>
+            <div class="icon-btn">
+                <div class="icon-btn__bg"></div>
+                <!-- 右向き矢印アイコン -->
+                <svg class="icon-arrow">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </div>
+        </div>
     </section>
-    <!-- ---------- /フェードスライダー ---------- -->
 </body>
 
 </html>
