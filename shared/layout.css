@@ -18,4 +18,10 @@
   background-size: cover;
   background-position: center;
 }
+
+/* コンテンツを中央から左右にはみ出させて、画面幅いっぱいに広げる */
+.media-block {
+  margin-right: calc(50% - 50vw); /* 位置調整 */
+  margin-left: calc(50% - 50vw); /* 位置調整 */
+}
 /* ---------- レイアウト END ---------- */
