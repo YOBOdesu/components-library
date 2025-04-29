@@ -2,33 +2,18 @@
 /* カード全体のスタイル */
 .card-01-wrap {
   display: flex;
-  gap: 1rem; /* カードの間隔 */
+  gap: 1rem; /*カードの間隔 */
 }
 
 /* カード本体のスタイル */
 .card-01 {
-  color: #fff; /* 文字色 */
-  border-radius: 8px; /* 角丸 */
+  /*border-radius: 8px;  角丸 */
   overflow: hidden;
   padding: 2rem; /* 内側の余白 */
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-/* カードa */
-.card-01--a {
-  background-color: #f8a13d;
-}
-
-/* カードb */
-.card-01--b {
-  background-color: #e0b800;
-}
-
-/* カードc */
-.card-01--c {
-  background-color: #d4a017;
+  gap: 1rem; /* カード内の間隔 */
 }
 
 /* カード内全要素のマージンリセット */
@@ -36,12 +21,31 @@
   margin: 0;
 }
 
-/* カードタイトルのスタイル */
-.card-01 h3 {
-  font-size: 3rem; /* フォントサイズ */
-  font-weight: bold; /* フォントの太さ */
-  line-height: 1.25; /* 行間 */
+/* カードa */
+.card-01--a {
+  background-color: #ccc;
 }
+
+/* カードb */
+.card-01--b {
+  background-color: #ddd;
+}
+
+/* カードc */
+.card-01--c {
+  background-color: #eee;
+}
+
+/* --- 見出し01 --- */
+.heading-01 * {
+  line-height: 1.25; /* 行間 */
+  font-weight: bold; /* フォントの太さ */
+}
+
+.heading-01 h3 {
+  font-size: 2rem; /* フォントサイズ */
+}
+/* --- /見出し01 --- */
 
 /* カード内画像ラッパー */
 .card-01__image {

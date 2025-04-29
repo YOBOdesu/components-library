@@ -20,8 +20,8 @@
 }
 
 /* コンテンツを中央から左右にはみ出させて、画面幅いっぱいに広げる */
-.media-block {
-  margin-right: calc(50% - 50vw); /* 位置調整 */
-  margin-left: calc(50% - 50vw); /* 位置調整 */
+.full-bleed {
+  margin-right: calc(50% - 50vw); /* 右を画面幅いっぱいに広げる */
+  margin-left: calc(50% - 50vw); /* 左を画面幅いっぱいに広げる */
 }
 /* ---------- レイアウト END ---------- */

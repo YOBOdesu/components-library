@@ -1,42 +1,70 @@
+/* コンテンツを中央から左右にはみ出させて、画面幅いっぱいに広げる */
+.full-bleed {
+  margin-right: calc(50% - 50vw); /* 右を画面幅いっぱいに広げる */
+  margin-left: calc(50% - 50vw); /* 左を画面幅いっぱいに広げる */
+}
+
 .service-01 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  width: 90%; /* 画面幅の90% */
+  margin: 0 auto; /* 画面幅の中央に配置 */
+  gap: 3rem; /* スライダーと文章の間隔 */
 }
 
 .service-01__content {
-  flex: 2; /* 文字欄の幅 */
+  flex: 3; /* 文字欄の幅 */
 }
 
-.service-01 .heading-01 * {
+/* --- 見出し01 --- */
+.heading-01 * {
   margin: 0; /* マージンリセット */
-  line-height: 1; /* 行間 */
+  line-height: 1.25; /* 行間 */
   font-weight: bold; /* フォントの太さ */
 }
 
 .heading-01 h3 {
   font-size: 3rem; /* フォントサイズ */
 }
+/* --- /見出し01 --- */
 
 .slider-fade {
-  flex: 3; /* スライダーの幅 */
+  flex: 4; /* スライダーの幅 */
 }
 
-/* ---------- アイコンボタン ---------- */
-.icon-btn {
-  margin-left: auto; /* 一番左に設置 */
+/* ---------- アイコンリンクリスト ---------- */
+.icon-link-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem; /*リンク同士の間隔 */
 }
-/* チェックマークアイコン */
-.icon-arrow {
+
+.icon-link-list li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* アイコンと文字の間隔 */
+  font-weight: bold; /* 文字の太さ */
+}
+
+.icon-arrow-simple {
+  color: #222; /* アイコン線の色 */
+  background-color: #fff; /* アイコンの背景色 */
+  border: solid 1px #222; /* アイコン背景の線 */
+  border-radius: 50%; /* アイコン背景を丸くする */
+  width: 2rem; /* アイコンのサイズ */
+  height: 2rem; /* アイコンのサイズ */
+  padding: 0.5rem; /* アイコンの内側余白 */
+  transition: all 0.1s ease; /* アイコンのホバーアニメーションの速度 */
+}
+
+.icon-link-list li a:hover .icon-arrow-simple {
   color: #fff; /* アイコン線の色 */
+  background-color: #222; /* アイコンの背景色 */
 }
-
-/* ボタン背景 */
-.icon-btn__bg {
-  background-color: #222; /* 背景色 */
-}
-/* ---------- /アイコンボタン ---------- */
+/* ---------- /アイコンリンクリスト ---------- */
 
 /* ---------- フェードスライダー ---------- */
 /* フェードスライダー全体の枠設定 */
