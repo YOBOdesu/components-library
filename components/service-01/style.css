@@ -49,6 +49,7 @@
   font-weight: bold; /* 文字の太さ */
 }
 
+/* シンプルな直線矢印アイコン */
 .icon-arrow-simple {
   color: #222; /* アイコン線の色 */
   background-color: #fff; /* アイコンの背景色 */
