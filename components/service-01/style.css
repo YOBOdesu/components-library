@@ -84,7 +84,6 @@
   object-fit: cover;
   border-radius: 10px; /* 角丸 */
   opacity: 0;
-  transform: translateY(30px); /* 30px 下に隠す */
   animation: fade 12s infinite; /* 画像枚数 × 4秒 */
 }
 
@@ -108,23 +107,18 @@
 @keyframes fade {
   0% {
     opacity: 0;
-    transform: translateY(30px); /* 30px 下に隠す */
   }
   5% {
     opacity: 1;
-    transform: translateY(0); /* 元の位置に戻す */
   }
   30% {
     opacity: 1;
-    transform: translateY(0); /* 元の位置に戻す */
   }
   35% {
     opacity: 0;
-    transform: translateY(-30px); /* 30px 上に隠す */
   }
   100% {
     opacity: 0;
-    transform: translateY(-30px); /* 30px 上に隠す */
   }
 }
 /* ---------- /フェードスライダー ---------- */
