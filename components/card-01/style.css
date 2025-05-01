@@ -86,7 +86,7 @@
 /* ---------- /カード01 ---------- */
 
 @media screen and (max-width: 767px) {
-  /* スマホ用のスタイル */
+  /* カード01 */
   .card-01-wrap {
     flex-direction: column; /* 縦並びに変更 */
   }
