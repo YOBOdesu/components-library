@@ -3,10 +3,12 @@
   display: flex;
 }
 
+/* 文字欄 */
 .about-01__content {
   flex: 2; /* 文字欄の幅 */
 }
 
+/* 画像欄 */
 .about-01__imgs {
   position: relative; /* 画像の位置を相対的に配置 */
   flex: 3; /* 画像欄の幅 */
@@ -21,23 +23,22 @@
   aspect-ratio: 3 / 4; /* アスペクト比を指定 */
 }
 .img-2 {
-  top: 10%;
-  left: 50%;
+  top: 10%; /* 上からの位置 */
+  left: 50%; /* 左からの位置 */
   width: 50%; /* 画像の幅 */
   aspect-ratio: 3 / 4; /* アスペクト比を指定 */
 }
 
 .img-3 {
-  top: 60%;
-  left: 10%;
-  width: 70%; /* 画像の幅 */
+  top: 60%; /* 上からの位置 */
+  left: 10%; /* 左からの位置 */
+  width: 60%; /* 画像の幅 */
   aspect-ratio: 16 / 9; /* アスペクト比を指定 */
 }
-
 /* --- /会社案内01 --- */
 
 /* --- フェードスライダー --- */
-/* フェードスライダー全体の枠設定 */
+/* スライダー全体の枠設定 */
 .slider-fade {
   position: absolute;
 }
@@ -51,7 +52,7 @@
   border-radius: 10px; /* 角丸 */
   opacity: 0;
   transform: translateY(30px); /* 30px 下に隠す */
-  animation: fade 8s infinite; /* 画像枚数 × 4秒 */
+  animation: fade 8s ease-out infinite; /* 画像枚数 × 4秒 */
 }
 
 /* 各画像にアニメーションの開始タイミングを指定 ※画像を増やした場合はここに追加する */
