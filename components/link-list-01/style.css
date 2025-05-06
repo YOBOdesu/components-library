@@ -1,0 +1,34 @@
+/* ---------- リンクリスト ---------- */
+.link-list-01 {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem; /*リンク同士の間隔 */
+}
+
+.link-list-01 li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* アイコンと文字の間隔 */
+  font-weight: bold; /* 文字の太さ */
+}
+
+/* シンプルな直線矢印アイコン */
+.icon-arrow-simple {
+  color: #fff; /* アイコン線の色 */
+  background-color: #222; /* アイコンの背景色 */
+  border: solid 1px #222; /* アイコン背景の線 */
+  border-radius: 50%; /* アイコン背景を丸くする */
+  width: 2rem; /* アイコンのサイズ */
+  height: 2rem; /* アイコンのサイズ */
+  padding: 0.5rem; /* アイコンの内側余白 */
+  transition: all 0.1s ease; /* アイコンのホバーアニメーションの速度 */
+}
+
+/* リンクリストのホバー時 */
+.link-list-01 li a:hover .icon-arrow-simple {
+  color: #222; /* アイコン線の色 */
+  background-color: #fff; /* アイコンの背景色 */
+}
+/* ---------- /リンクリスト ---------- */
