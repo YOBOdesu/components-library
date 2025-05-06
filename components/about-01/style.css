@@ -104,13 +104,17 @@
 
 /* --- 見出し01 --- */
 .heading-01 * {
+  display: block; /* ブロック要素にする */
   margin: 0; /* マージンリセット */
   line-height: 1.25; /* 行間 */
   font-weight: bold; /* フォントの太さ */
 }
 
-.heading-01 h3 {
+.heading-01 .heading-main {
   font-size: 3rem; /* フォントサイズ */
+}
+.heading-01 .heading-sub {
+  font-size: 1rem; /* フォントサイズ */
 }
 /* --- /見出し01 --- */
 
