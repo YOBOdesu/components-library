@@ -14,6 +14,7 @@
   font-weight: bold; /* 文字の太さ */
 }
 
+/* --- べた塗り丸ボタン --- */
 /* シンプルな直線矢印アイコン */
 .icon-arrow-simple {
   color: #fff; /* アイコン線の色 */
@@ -26,9 +27,10 @@
   transition: all 0.1s ease; /* アイコンのホバーアニメーションの速度 */
 }
 
-/* リンクリストのホバー時 */
+/* ホバー時 */
 .link-list-01 li a:hover .icon-arrow-simple {
   color: #222; /* アイコン線の色 */
   background-color: #fff; /* アイコンの背景色 */
 }
+/* --- /べた塗り丸ボタン --- */
 /* ---------- /リンクリスト ---------- */
