@@ -1,0 +1,104 @@
+/* ---------- カード01 ---------- */
+/* カード全体のスタイル */
+.card-02 {
+  display: flex;
+  gap: 1rem; /*カードの間隔 */
+}
+
+/* カード本体のスタイル */
+.card-02 .card {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 4 / 5; /* アスペクト比を指定 */
+  padding: 2rem; /* 内側の余白 */
+  gap: 1rem; /* カード内の間隔 */
+  border-radius: 10px; /* 角丸 */
+}
+
+/* オーバーレイ */
+.card-02 .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(17, 31, 107, 1) 10%,
+    rgba(17, 31, 107, 0) 50%
+  ); /* 下→上へ透過 */
+  z-index: 1;
+}
+
+/* カード内全要素のマージンリセット */
+.card-02 .card * {
+  margin: 0;
+}
+
+/* カード背景 */
+.card-02 .card__bg {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.9s ease; /* アニメーション用 */
+}
+
+/* カード内文章 */
+.card__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto !important;
+  color: #fff;
+}
+
+/* --- 見出し01 --- */
+.heading-01 * {
+  display: block; /* ブロック要素にする */
+  margin: 0; /* マージンリセット */
+  line-height: 1.25; /* 行間 */
+  font-weight: bold; /* フォントの太さ */
+}
+
+.heading-01 .heading-main {
+  font-size: 2rem; /* フォントサイズ */
+}
+.heading-01 .heading-sub {
+  font-size: 1rem; /* フォントサイズ */
+}
+/* --- /見出し01 --- */
+
+/* 右向き矢印アイコン */
+.icon-arrow {
+  color: #222; /* アイコン線の色 */
+  background-color: #fff; /* アイコンの背景色 */
+  border: solid 1px #fff; /* アイコン背景の線 */
+  border-radius: 50%; /* アイコン背景を丸くする */
+  width: 3rem; /* アイコンのサイズ */
+  height: 3rem; /* アイコンのサイズ */
+  padding: 1rem; /* アイコンの内側余白 */
+  transition: all 0.3s ease; /* アイコンのホバーアニメーションの速度 */
+}
+
+.icon-arrow {
+  flex-shrink: 0;
+}
+
+/* ホバーの挙動 */
+.card-02 .card:hover .card__bg {
+  transform: scale(1.3); /* 拡大率 */
+}
+.card-02 .card:hover .icon-arrow {
+  color: #fff; /* アイコン線の色 */
+  background-color: #222; /* アイコンの背景色 */
+}
+/* ---------- /カード01 ---------- */
+
+@media screen and (max-width: 767px) {
+  /* カード01 */
+  .card-02 {
+    flex-direction: column; /* 縦並びに変更 */
+  }
+}

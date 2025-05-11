@@ -70,3 +70,15 @@ a:hover .icon-arrow {
   );
   border-radius: 50%;
 }
+
+/* オーバーレイ */
+.overlay::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 31, 107, 0.3); /* #111F6B の30%透過 */
+  z-index: 1;
+}
