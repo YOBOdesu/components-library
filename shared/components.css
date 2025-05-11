@@ -14,15 +14,15 @@
   color: #222; /*アイコン線の色 */
 }
 
-/* 右向き矢印アイコン */
-.icon-arrow {
+/* ＞アイコン */
+.icon-chevron {
   width: 1rem; /* アイコンの幅 */
   height: 1rem; /* アイコンの高さ */
   color: #222; /*アイコン線の色 */
 }
 
-/* シンプルな直線矢印アイコン */
-.icon-arrow-simple {
+/* 右向き矢印アイコン */
+.icon-arrow {
   width: 1rem; /* アイコンの幅 */
   height: 1rem; /* アイコンの高さ */
   color: #222; /*アイコン線の色 */
@@ -30,8 +30,8 @@
 /* ---------- /SVGアイコン ---------- */
 
 /* --- べた塗り丸ボタン --- */
-/* シンプルな直線矢印アイコン */
-.icon-arrow-simple {
+/* 右向き矢印アイコン */
+.icon-arrow {
   color: #fff; /* アイコン線の色 */
   background-color: #222; /* アイコンの背景色 */
   border: solid 1px #222; /* アイコン背景の線 */
@@ -43,7 +43,7 @@
 }
 
 /* ホバー時 */
-a:hover .icon-arrow-simple {
+a:hover .icon-arrow {
   color: #222; /* アイコン線の色 */
   background-color: #fff; /* アイコンの背景色 */
 }
