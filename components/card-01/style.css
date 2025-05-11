@@ -73,6 +73,7 @@
   margin-top: auto; /* 一番下に設置 */
   color: #fff; /* アイコン線の色 */
   background-color: #222; /* アイコンの背景色 */
+  border: solid 1px #222; /* アイコン背景の線 */
   border-radius: 50%; /* アイコン背景を丸くする */
   width: 3rem; /* アイコンのサイズ */
   height: 3rem; /* アイコンのサイズ */
@@ -85,8 +86,8 @@
   transform: scale(1.3); /* 拡大率 */
 }
 .card-01:hover .icon-arrow {
-  transform: scale(1.3); /* 拡大率 */
-  padding: 1.1rem; /* アイコンの内側余白 */
+  color: #222; /* アイコン線の色 */
+  background-color: #fff; /* アイコンの背景色 */
 }
 /* ---------- /カード01 ---------- */
 

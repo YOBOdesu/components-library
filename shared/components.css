@@ -42,9 +42,31 @@
   transition: all 0.1s ease; /* アイコンのホバーアニメーションの速度 */
 }
 
-/* ホバー時 */
+/* ホバー時（色が変わる） */
 a:hover .icon-arrow {
   color: #222; /* アイコン線の色 */
   background-color: #fff; /* アイコンの背景色 */
 }
+
+/* ホバー時（背景拡大） */
+a:hover .icon-arrow {
+  transform: scale(1.3); /* 拡大率 */
+  padding: 1.1rem; /* アイコンの内側余白 */
+}
+
 /* --- /べた塗り丸ボタン --- */
+
+/* 円形グラデーション背景 */
+.radial-gradient-bg {
+  position: absolute;
+  top: 20%; /* 位置 */
+  left: 10%; /* 位置 */
+  width: 600px; /* サイズ */
+  height: 600px; /* サイズ */
+  background: radial-gradient(
+    circle,
+    /* 色 */ rgba(173, 216, 230, 0.8),
+    /* 透明度 */ transparent 70%
+  );
+  border-radius: 50%;
+}

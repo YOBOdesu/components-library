@@ -4,7 +4,8 @@
   margin-left: calc(50% - 50vw); /* 左を画面幅いっぱいに広げる */
 }
 
-.service-01 {
+/* --- サービス（共通） --- */
+.service {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,9 +14,10 @@
   gap: 3rem; /* スライダーと文章の間隔 */
 }
 
-.service-01__content {
+.service__content {
   flex: 3; /* 文字欄の幅 */
 }
+/* --- /サービス（共通） --- */
 
 /* --- 見出し01 --- */
 .heading-01 * {
@@ -33,17 +35,13 @@
 }
 /* --- /見出し01 --- */
 
-.slider-fade {
-  flex: 4; /* スライダーの幅 */
-}
-
 /* ---------- リンクリスト ---------- */
 .link-list-01 {
   list-style: none;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem; /*リンク同士の間隔 */
+  gap: 1rem; /* リンク同士の間隔 */
 }
 
 .link-list-01 li a {
@@ -54,7 +52,7 @@
 }
 
 /* シンプルな直線矢印アイコン */
-.icon-arrow-simple {
+.icon-arrow {
   color: #fff; /* アイコン線の色 */
   background-color: #222; /* アイコンの背景色 */
   border: solid 1px #222; /* アイコン背景の線 */
@@ -66,7 +64,7 @@
 }
 
 /* リンクリストのホバー時 */
-.link-list-01 li a:hover .icon-arrow-simple {
+.link-list-01 li a:hover .icon-arrow {
   color: #222; /* アイコン線の色 */
   background-color: #fff; /* アイコンの背景色 */
 }
@@ -79,6 +77,7 @@
   width: 100%; /* 横幅 */
   aspect-ratio: 4 / 3; /* 比率を変えたいときはここを調整 */
   border-radius: 10px; /* 角丸 */
+  flex: 4; /* スライダーの幅 */
 }
 
 /* スライド画像の共通スタイル */

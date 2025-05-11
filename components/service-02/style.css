@@ -4,13 +4,14 @@
   margin-left: calc(50% - 50vw); /* 左を画面幅いっぱいに広げる */
 }
 
-.service-02 {
+/* --- サービス（共通） --- */
+.service {
   padding: 5rem 0; /* 上下の余白 */
   position: relative;
   overflow: hidden;
 }
 
-.service-02__content {
+.service__content {
   max-width: 500px; /* 文字欄の最大幅 */
   padding: clamp(2rem, 10vw, 5rem); /* 上下の余白 */
   border-radius: 10px; /* 角丸 */
@@ -19,6 +20,7 @@
   z-index: 1;
   margin-left: auto; /* 右寄せ */
 }
+/* --- /サービス（共通） --- */
 
 /* --- 見出し01 --- */
 .heading-01 * {
@@ -42,7 +44,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem; /*リンク同士の間隔 */
+  gap: 1rem; /* リンク同士の間隔 */
 }
 
 .link-list-01 li a {
@@ -53,7 +55,7 @@
 }
 
 /* シンプルな直線矢印アイコン */
-.icon-arrow-simple {
+.icon-arrow {
   color: #fff; /* アイコン線の色 */
   background-color: #222; /* アイコンの背景色 */
   border: solid 1px #222; /* アイコン背景の線 */
@@ -65,7 +67,7 @@
 }
 
 /* リンクリストのホバー時 */
-.link-list-01 li a:hover .icon-arrow-simple {
+.link-list-01 li a:hover .icon-arrow {
   color: #222; /* アイコン線の色 */
   background-color: #fff; /* アイコンの背景色 */
 }
@@ -82,7 +84,7 @@
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee-img 20s linear infinite; /* スクロールのスピード*/
+  animation: marquee-img 20s linear infinite; /* スクロールのスピード */
 }
 
 .marquee-track img {

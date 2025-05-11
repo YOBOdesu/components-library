@@ -1,0 +1,67 @@
+/* --- 会社案内（共通） --- */
+.about {
+  display: flex;
+}
+
+/* 文字欄 */
+.about__content {
+  flex: 2; /* 文字欄の幅 */
+}
+
+/* 画像群 */
+.about__imgs {
+  position: relative; /* 画像の位置を相対的に配置 */
+  flex: 3; /* 画像欄の幅 */
+  aspect-ratio: 1; /* 比率を変えたいときはここを調整 */
+}
+
+/* 画像の共通スタイル */
+.about__imgs > img {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 10px; /* 角丸 */
+}
+
+/* 画像ごとの配置位置 */
+.img-1 {
+  top: 0; /* 上からの位置 */
+  left: 5%; /* 左からの位置 */
+  width: 40%; /* 画像の幅 */
+  aspect-ratio: 3 / 4; /* アスペクト比を指定 */
+}
+.img-2 {
+  top: 10%; /* 上からの位置 */
+  left: 50%; /* 左からの位置 */
+  width: 50%; /* 画像の幅 */
+  aspect-ratio: 3 / 4; /* アスペクト比を指定 */
+}
+.img-3 {
+  top: 60%; /* 上からの位置 */
+  left: 10%; /* 左からの位置 */
+  width: 60%; /* 画像の幅 */
+  aspect-ratio: 16 / 9; /* アスペクト比を指定 */
+}
+/* --- /会社案内（共通） --- */
+
+/* --- 見出し01 --- */
+.heading-01 * {
+  display: block; /* ブロック要素にする */
+  margin: 0; /* マージンリセット */
+  line-height: 1; /* 行間 */
+  font-weight: bold; /* フォントの太さ */
+}
+
+.heading-01 .heading-main {
+  font-size: 5rem; /* フォントサイズ */
+}
+.heading-01 .heading-sub {
+  font-size: 1rem; /* フォントサイズ */
+}
+/* --- /見出し01 --- */
+
+@media screen and (max-width: 767px) {
+  /* --- 会社案内（共通） --- */
+  .about {
+    flex-direction: column; /* 縦並びに変更 */
+  }
+}
