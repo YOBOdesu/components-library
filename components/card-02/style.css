@@ -1,4 +1,4 @@
-/* ---------- カード01 ---------- */
+/* ---------- カード02 ---------- */
 /* カード全体のスタイル */
 .card-02 {
   display: flex;
@@ -49,7 +49,7 @@
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   margin-top: auto !important;
   color: #fff;
 }
@@ -94,7 +94,7 @@
   color: #fff; /* アイコン線の色 */
   background-color: #222; /* アイコンの背景色 */
 }
-/* ---------- /カード01 ---------- */
+/* ---------- /カード02 ---------- */
 
 @media screen and (max-width: 767px) {
   /* カード01 */

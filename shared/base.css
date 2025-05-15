@@ -13,7 +13,7 @@ a {
 /* 画像 */
 img {
   max-width: 100%;
-  min-width: 0; /* flexやgridの中でもちゃんと縮んでね！ */
+  min-width: 0; /* flexやgridの中でも縮む設定 */
   height: auto;
   display: block; /* 不要な隙間をなくす（インライン扱いを解除） */
   pointer-events: none; /* クリックできないようにする */

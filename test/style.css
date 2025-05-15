@@ -1,1 +1,80 @@
+/* ---------- 丸3つバナー ---------- */
+/* バナー全体のスタイル */
+.bnr-feature {
+  position: relative;
+  overflow: hidden;
+}
 
+/* バナー内全要素のマージンリセット */
+.bnr-feature * {
+  margin: 0 !important;
+}
+
+/* バナー背景 */
+.bnr-feature__bg {
+  position: absolute;
+  inset: 0;
+  transition: all 0.9s ease; /* アニメーション用 */
+}
+
+/* バナー内 */
+.bnr-feature__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 3rem 3rem 0;
+}
+
+.bnr-feature__content > * {
+  flex: 1; /* 各要素を均等に配置 */
+}
+
+/* キャッチフレーズ　全体 */
+.bnr-feature__catch {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(1rem, 3vw, 3rem); /* キャッチフレーズ同士の余白 */
+}
+
+/* キャッチフレーズ */
+.bnr-feature__catch p {
+  background-color: #fff; /* 背景色 */
+  padding: clamp(1rem, 2vw, 3rem); /* 内側の余白 */
+  font-size: clamp(1.5rem, 3.5vw, 5rem); /* フォントサイズ */
+  font-family: var(--headline_font_type); /* フォントファミリー */
+  line-height: 1 !important;
+}
+
+/* 丸3つ画像 */
+.bnr-feature img {
+  padding: 3rem; /* 画像の余白 */
+}
+
+/* ホバーの挙動 */
+.bnr-feature:hover .bnr-feature__bg {
+  transform: scale(1.1); /* 拡大率 */
+  opacity: 0.7; /* 透明度 */
+}
+/* ---------- /丸3つバナー ---------- */
+
+/* スライドイン（左から） */
+.slidein-l {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.8s ease-out;
+}
+.slidein-l.show {
+  clip-path: inset(0);
+}
+
+/* フェードイン */
+.fadein {
+  opacity: 0;
+  transform: translateY(30px); /* 30px 下に隠す */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fadein.show {
+  opacity: 1;
+  transform: translateY(0);
+}
