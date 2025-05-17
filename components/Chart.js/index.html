@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart.js 外部JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../shared/base.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+</head>
+
+<body>
+    <div class="circle-wrapper">
+        <div class="circle-chart">
+            <canvas id="chart1"></canvas>
+        </div>
+        <div class="circle-chart">
+            <canvas id="chart2"></canvas>
+        </div>
+        <div class="circle-chart">
+            <canvas id="chart3"></canvas>
+        </div>
+    </div>
+
+    <div style="width: 100%;">
+        <canvas id="compareChart"></canvas>
+    </div>
+
+    <!-- 外部JSの読み込み -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.circle-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.circle-chart {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .circle-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

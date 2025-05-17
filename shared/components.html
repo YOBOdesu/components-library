@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="components.css">
 <link rel="stylesheet" href="base.css">
 
-<!-- チェックマークアイコン（SVGスプライト定義） -->
+<!-- チェックマークアイコン（定義） -->
 <svg style="display: none;">
   <symbol id="icon-check" viewBox="0 0 24 24">
     <polyline points="4 12 10 18 20 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -9,7 +9,7 @@
   </symbol>
 </svg>
 
-<!-- ＞アイコン（SVGスプライト定義） -->
+<!-- ＞アイコン（定義） -->
 <svg style="display: none;">
   <symbol id="icon-chevron" viewBox="0 0 24 24">
     <polyline points="8 4 16 12 8 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -17,7 +17,7 @@
   </symbol>
 </svg>
 
-<!-- 右向き矢印アイコン（SVGスプライト定義） -->
+<!-- 右向き矢印アイコン（定義） -->
 <svg style="display: none;">
   <symbol id="icon-arrow" viewBox="0 0 24 24">
     <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -40,3 +40,15 @@
 <svg class="icon-arrow">
   <use xlink:href="#icon-arrow" />
 </svg>
+
+<!-- くるっと一回転ボタン -->
+<div class="btn-flip">
+  <span class="btn-flip-wrap">
+    <span class="btn-flip__text btn-flip__text--top">view more</span>
+    <span class="btn-flip__text btn-flip__text--bottom">view more</span>
+  </span>
+  <svg class="icon-arrow">
+    <use xlink:href="#icon-arrow"></use>
+  </svg>
+</div>
+<!-- /くるっと一回転ボタン -->

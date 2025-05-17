@@ -56,6 +56,51 @@ a:hover .icon-arrow {
 
 /* --- /べた塗り丸ボタン --- */
 
+/* --- くるっと一回転ボタン --- */
+.btn-flip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: auto !important; /* 右寄せ */
+}
+
+.btn-flip-wrap {
+  position: relative;
+}
+
+.btn-flip__text {
+  display: block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  backface-visibility: hidden;
+}
+
+.btn-flip__text--top {
+  transform: translateY(0) rotateX(0deg);
+}
+
+.btn-flip__text--bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%) rotateX(90deg);
+  opacity: 0;
+}
+
+a:hover .btn-flip__text--top {
+  transform: translateY(-100%) rotateX(-90deg);
+  opacity: 0;
+}
+
+a:hover .btn-flip__text--bottom {
+  transform: translateY(0) rotateX(0deg);
+  opacity: 1;
+}
+
+/* --- /くるっと一回転ボタン --- */
+
 /* 円形グラデーション背景 */
 .radial-gradient-bg {
   position: absolute;
