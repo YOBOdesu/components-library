@@ -59,7 +59,7 @@
 }
 /* --- /見出し01 --- */
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   /* --- 会社案内 --- */
   .about {
     flex-direction: column; /* 縦並びに変更 */

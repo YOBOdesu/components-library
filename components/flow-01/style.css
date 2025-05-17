@@ -78,7 +78,7 @@
 .flow-item:nth-child(2n) .flow-item-line::after {
   left: -15px;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .flow-item {
     margin-bottom: -40px;
   }

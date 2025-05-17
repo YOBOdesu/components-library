@@ -96,7 +96,7 @@
 }
 /* ---------- /カード02 ---------- */
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   /* カード01 */
   .card-02 {
     flex-direction: column; /* 縦並びに変更 */

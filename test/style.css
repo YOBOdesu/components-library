@@ -1,80 +1,130 @@
-/* ---------- 丸3つバナー ---------- */
-/* バナー全体のスタイル */
-.bnr-feature {
+/* --- view moreボタン --- */
+.btn-view-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: auto !important; /* 右寄せ */
+  margin-top: auto !important; /* 下寄せ */
+}
+
+.btn-text-wrap {
+  position: relative;
+}
+
+.btn-text {
+  display: block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  backface-visibility: hidden;
+}
+
+.btn-text--top {
+  transform: translateY(0) rotateX(0deg);
+}
+
+.btn-text--bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%) rotateX(90deg);
+  opacity: 0;
+}
+
+/* 右向き矢印アイコン */
+.icon-arrow {
+  color: #1a2950;
+  background-color: #fff;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  flex-shrink: 0;
+  transition: all 0.1s ease;
+}
+/* --- /view moreボタン --- */
+
+/* ---------- 事業内容 ---------- */
+/* カード全体のスタイル */
+.card-02 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2列 */
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* カード本体のスタイル */
+.card-02 .card {
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 400px 2rem 2rem 2rem;
+  border: solid 1px #ccc;
 }
 
-/* バナー内全要素のマージンリセット */
-.bnr-feature * {
-  margin: 0 !important;
-}
-
-/* バナー背景 */
-.bnr-feature__bg {
+/* オーバーレイ */
+.card-02 .card::before {
+  content: "";
   position: absolute;
   inset: 0;
-  transition: all 0.9s ease; /* アニメーション用 */
-}
-
-/* バナー内 */
-.bnr-feature__content {
-  position: relative;
+  background: linear-gradient(
+    to top,
+    rgb(26, 41, 80) 0%,
+    rgba(26, 41, 80, 0) 100%
+  ); /* 下→上へ透過 */
   z-index: 1;
+}
+
+/* カード内全要素のマージンリセット */
+.card-02 .card * {
+  margin: 0;
+}
+
+/* カード背景 */
+.card-02 .card__bg {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.9s ease; /* アニメーション用 */
+}
+
+/* カード内容 */
+.card__content {
+  position: relative;
+  z-index: 2;
+  color: #fff; /* 文字色 */
   display: flex;
-  justify-content: space-between;
-  padding: 3rem 3rem 3rem 0;
-}
-
-.bnr-feature__content > * {
-  flex: 1; /* 各要素を均等に配置 */
-}
-
-/* キャッチフレーズ　全体 */
-.bnr-feature__catch {
-  display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: clamp(1rem, 3vw, 3rem); /* キャッチフレーズ同士の余白 */
 }
 
-/* キャッチフレーズ */
-.bnr-feature__catch p {
-  background-color: #fff; /* 背景色 */
-  padding: clamp(1rem, 2vw, 3rem); /* 内側の余白 */
-  font-size: clamp(1.5rem, 3.5vw, 5rem); /* フォントサイズ */
+/* カードタイトル */
+.card-02 h3 {
+  line-height: 1.25; /* 行間 */
+  font-weight: bold; /* フォントの太さ */
+  font-size: 2rem; /* フォントサイズ */
   font-family: var(--headline_font_type); /* フォントファミリー */
-  line-height: 1 !important;
-}
-
-/* 丸3つ画像 */
-.bnr-feature img {
-  padding: 3rem; /* 画像の余白 */
+  margin-bottom: 1rem !important; /* タイトル下の余白 */
 }
 
 /* ホバーの挙動 */
-.bnr-feature:hover .bnr-feature__bg {
+.card-02 .card:hover .card__bg {
   transform: scale(1.1); /* 拡大率 */
-  opacity: 0.7; /* 透明度 */
-}
-/* ---------- /丸3つバナー ---------- */
-
-/* スライドイン（左から） */
-.slidein-l {
-  clip-path: inset(0 100% 0 0);
-  transition: clip-path 0.8s ease-out;
-}
-.slidein-l.show {
-  clip-path: inset(0);
 }
 
-/* フェードイン */
-.fadein {
+.card-02 .card:hover .icon-arrow {
+  color: #fff;
+  background-color: #8b7500;
+}
+
+.card-02 .card:hover .btn-text--top {
+  transform: translateY(-100%) rotateX(-90deg);
   opacity: 0;
-  transform: translateY(30px); /* 30px 下に隠す */
-  transition: opacity 1s ease-out, transform 1s ease-out;
 }
-.fadein.show {
+
+.card-02 .card:hover .btn-text--bottom {
+  transform: translateY(0) rotateX(0deg);
   opacity: 1;
-  transform: translateY(0);
 }
+/* ---------- /事業内容 ---------- */
