@@ -1,17 +1,16 @@
-/* --- IntersectionObserver 遅延あり --- */
+/* --- IntersectionObserver --- */
 document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll(".fadein, .slidein-l");
+  const elements = document.querySelectorAll(
+    // アニメーションはここに追加
+    ".rotate-in"
+  );
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const target = entry.target;
-          const delay = parseInt(target.dataset.delay) || 0;
-          setTimeout(() => {
-            target.classList.add("show");
-          }, delay);
-          observer.unobserve(target);
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target); // 監視を解除（1回だけ実行）
         }
       });
     },
@@ -20,4 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.forEach((el) => observer.observe(el));
 });
-/* --- /IntersectionObserver 遅延あり --- */
+/* --- /IntersectionObserver --- */

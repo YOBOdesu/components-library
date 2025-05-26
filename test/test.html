@@ -4,119 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サービス-02</title>
+    <title>サービス</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../shared/base.css">
+    <link rel="stylesheet" href="../../shared/base.css">
     <script src="script.js"></script>
+
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- /Googleフォント -->
+
+    <!-- 車のアイコン（定義） -->
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-car" viewBox="0 0 4628.75 3359.66">
+            <path fill="currentColor" d="M4628.33,910.33c0-47.59-16.55-111.73-120-111.73h-370.35c-40.19,0-68.43,23.91-87.18,49.6
+      l-323.69-532.91c-34.88-57.43-77.21-110-125.87-156.33h0C3459.52,24.02,3271.32,0,3075.63,0h-1522.51
+      c-195.69,0-383.89,24.02-525.61,158.96h0c-48.66,46.33-90.99,98.9-125.87,156.33l-323.69,532.91
+      c-18.75-25.69-46.98-49.6-87.18-49.6H120.42C16.96,798.6.41,862.74.41,910.33S-.06,1024.74,0,1033.22
+      c.23,28.93,9.52,104.26,99.72,106.77,81.62,2.27,227.81,1.22,300.69.49l-52.85,87.01
+      c-44.44,70.14-82.87,143.9-114.91,220.5h0c-75.44,180.4-114.29,373.99-114.29,569.53v1225.68
+      c0,64.32,52.14,116.45,116.45,116.45h487.41c64.32,0,116.45-52.14,116.45-116.45v-271.95h2951.37v271.95
+      c0,64.32,52.14,116.45,116.45,116.45h487.41c64.32,0,116.45-52.14,116.45-116.45v-418.03h0v-807.65
+      c0-195.54-38.85-389.13-114.29-569.53h0c-32.03-76.6-70.47-150.36-114.91-220.5l-52.85-87.01
+      c72.88.73,219.08,1.77,300.69-.49,90.2-2.51,99.49-77.83,99.72-106.77.07-8.49-.41-73.21-.41-122.89Z" />
+        </symbol>
+    </svg>
+
+
+
+
+    <svg style="display: none;">
+        <!-- チェックマークアイコン（定義） -->
+        <symbol id="icon-check" viewBox="0 0 24 24">
+            <polyline points="4 12 10 18 20 6" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+
+        <!-- 右向き矢印アイコン（定義） -->
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
+            <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            <polyline points="14,6 20,12 14,18" fill="none" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+    </svg>
+
 </head>
 
-<body>
+<body class="container">
 
-    <section class="card-02">
-        <!-- カード1 -->
-        <a href="https://wakeari-soudan.com/" target="_blank" rel="noopener noreferrer" class="card">
-            <div class="card__bg"
-                style="background: url(https://morld02.sakura.ne.jp/tre/wp-content/uploads/2025/05/tre-top-business-01.webp) no-repeat center/cover;">
-            </div>
-            <div class="card__content">
-                <div class="card__text">
-                    <h3>不動産買取事業（事業用地・廃工場・倉庫など）</h3>
-                    <p>事業用不動産買取の専門として、廃工場や倉庫、事業用地などの通常売却が難しい物件も幅広く買取対応いたします。相続や事業整理等で早期に売却したい場合も、専門買取会社である当社がスムーズに解決いたします。今までの数多くの実績と経験をもとに、お客様にベストなご提案をさせていただきます。
-                    </p>
-                </div>
-                <!-- view moreボタン -->
-                <div class="btn-view-more">
-                    <span class="btn-text-wrap">
-                        <span class="btn-text btn-text--top">view more</span>
-                        <span class="btn-text btn-text--bottom">view more</span>
-                    </span>
-                    <svg class="icon-arrow">
-                        <use xlink:href="#icon-arrow"></use>
-                    </svg>
-                </div>
-                <!-- /view moreボタン -->
-            </div>
-        </a>
-        <!-- /カード1 -->
 
-        <!-- カード2 -->
-        <a href="#" target="_blank" rel="noopener noreferrer" class="card">
-            <div class="card__bg"
-                style="background: url(https://morld02.sakura.ne.jp/tre/wp-content/uploads/2025/05/tre-top-business-02.webp) no-repeat center/cover;">
-            </div>
-            <div class="card__content">
-                <div class="card__text">
-                    <h3>事業用不動産の保有・賃貸管理</h3>
-                    <p>事業用不動産の保有および賃貸管理を通じて、資産価値の維持と中長期的な成長を図るとともに、自社で管理する物件については、地域の特性や環境に配慮し、建物の性能維持に加えて、周辺との調和や利便性向上の観点から、不動産価値の最大化に努めています。また、短期的な売却益を目的とする取引や転売は行っておらず、取得物件は安定的な賃貸収益の見込める案件、または当社グループでの利用を前提とした案件に限定しています。
-                    </p>
-                </div>
-                <!-- view moreボタン
-            <div class="btn-view-more">
-                <span class="btn-text-wrap">
-                    <span class="btn-text btn-text--top">view more</span>
-                    <span class="btn-text btn-text--bottom">view more</span>
-                </span>
-                <svg class="icon-arrow">
-                    <use xlink:href="#icon-arrow"></use>
-                </svg>
-            </div>
-            /view moreボタン -->
-            </div>
-        </a>
-        <!-- /カード2 -->
-
-        <!-- カード3 -->
-        <a href="https://wakeari-soudan.com/mochibun/" target="_blank" rel="noopener noreferrer" class="card">
-            <div class="card__bg"
-                style="background: url(https://morld02.sakura.ne.jp/tre/wp-content/uploads/2025/05/tre-top-business-03.webp) no-repeat center/cover;">
-            </div>
-            <div class="card__content">
-                <div class="card__text">
-                    <h3>共有不動産買取事業</h3>
-                    <p>相続やご夫婦共有名義の不動産も買取をいたします。共有名義の場合、全員の同意がないと売却できないと思われがちですが、お客様の持ち分だけの買取も可能です。他の共有名義人となかなか話がまとまらず身動きがとれないというお悩みも、お客様にご納得いただけるよう、スピーディーに解決に向け行動いたします。トラブルになりやすい共有不動産は、専門のノウハウを持った当社スタッフが丁寧に対応いたします。
-                    </p>
-                </div>
-                <!-- view moreボタン -->
-                <div class="btn-view-more">
-                    <span class="btn-text-wrap">
-                        <span class="btn-text btn-text--top">view more</span>
-                        <span class="btn-text btn-text--bottom">view more</span>
-                    </span>
-                    <svg class="icon-arrow">
-                        <use xlink:href="#icon-arrow"></use>
-                    </svg>
-                </div>
-                <!-- /view moreボタン -->
-            </div>
-        </a>
-        <!-- /カード3 -->
-
-        <!-- カード4 -->
-        <a href="https://wakeari-soudan.com/hasan-bengo/" target="_blank" rel="noopener noreferrer" class="card">
-            <div class="card__bg"
-                style="background: url(https://morld02.sakura.ne.jp/tre/wp-content/uploads/2025/05/tre-top-business-04.webp) no-repeat center/cover;">
-            </div>
-            <div class="card__content">
-                <div class="card__text">
-                    <h3>士業系相談不動産買取＆仲介事業</h3>
-                    <p>破産案件や倒産、相続、私的整理など、法的な問題解決が必要な不動産も当社で買取や仲介を行っております。法律や税金に関わる問題も、経験豊富な当社専門スタッフが的確にご案内します。専門的な知識が必要な不動産取引となるため、ノウハウを持った当社にお任せください。売買のご相談に限らず、賃貸管理、買取再販、コンサルティングなど、あらゆる面でお客様の意向に沿ったサポートをさせていただきます。
-                    </p>
-                </div>
-                <!-- view moreボタン -->
-                <div class="btn-view-more">
-                    <span class="btn-text-wrap">
-                        <span class="btn-text btn-text--top">view more</span>
-                        <span class="btn-text btn-text--bottom">view more</span>
-                    </span>
-                    <svg class="icon-arrow">
-                        <use xlink:href="#icon-arrow"></use>
-                    </svg>
-                </div>
-                <!-- /view moreボタン -->
-            </div>
-        </a>
-        <!-- /カード4 -->
-    </section>
 
 </body>
 

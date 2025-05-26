@@ -1,0 +1,8 @@
+:root {
+  --font-size-clamp: clamp(1.5rem, 2vw + 1rem, 3rem);
+  --font-size-heading: clamp(2rem, 2vw + 1rem, 4rem);
+}
+
+p {
+  font-size: var(--font-size-clamp);
+}

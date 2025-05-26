@@ -23,6 +23,8 @@ img {
 body {
   font-size: 16px;
   line-height: 2.4;
+  /* フォント変更 */
+  font-family: "M PLUS Rounded 1c", sans-serif !important;
 }
 
 /* スマホ用：画面幅768px以下でサイズダウン */
