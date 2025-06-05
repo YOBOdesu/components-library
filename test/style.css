@@ -1,28 +1,135 @@
-/* ---------- マーキー ---------- */
-.marquee-wrap {
-  width: 100%; /* マーキーの横幅 */
-  overflow: hidden;
-  white-space: nowrap;
+/* --- 見出し01 --- */
+.heading-01 * {
+  display: block; /* ブロック要素にする */
+  margin: 0; /* マージンリセット */
+  line-height: 1.25; /* 行間 */
+  font-weight: bold; /* フォントの太さ */
+  text-align: center;
 }
 
-.marquee {
-  display: inline-block;
-  white-space: nowrap;
-  animation: marquee 15s linear infinite; /* スクロールのスピード */
+.heading-01 .heading-main {
+  font-size: 3rem; /* フォントサイズ */
+}
+.heading-01 .heading-sub {
+  font-size: 1rem; /* フォントサイズ */
+  color: #2d60b3; /* サブタイトルの色 */
+}
+/* --- /見出し01 --- */
+
+/* --------------------
+事業内容
+-------------------- */
+/* --- 共通設定 --- */
+.service {
+  padding: 5rem 0;
+  background: url(https://morld01.sakura.ne.jp/kam_partners/wp-content/uploads/2025/06/kamp-bg.png);
 }
 
-.marquee span {
-  font-size: 10rem; /* フォントサイズ */
-  font-weight: 800; /* フォントの太さ */
-  color: #ffdd80dc; /* フォントの色 */
+.service h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  border-bottom: 5px dotted #2d60b3;
+  padding-bottom: 1rem;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
+.service-content {
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 30px;
+}
+/* --- /共通設定 --- */
+
+/* --- 2カラムの図 --- */
+.service-col {
+  display: flex;
+  gap: 2rem;
+}
+
+.service-col > div {
+  flex: 1;
+}
+/* --- /2カラムの図 --- */
+
+/* --- 品目 --- */
+ul.service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5em 1em;
+}
+
+.service-list li {
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.service-list h4 {
+  padding: 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.service-list img {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+}
+/* --- /品目 --- */
+
+/* --- サービスの流れ --- */
+.flow {
+  display: flex;
+  gap: 2rem;
+}
+
+.flow > div {
+  flex: 1;
+}
+
+.text-overlay {
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.text-overlay ol {
+  padding: 0 0 0 1rem;
+  line-height: 1.5;
+}
+
+.text-overlay h4 {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.25;
+  background-color: #333;
+}
+
+.text-overlay li p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* --- /サービスの流れ ---- */
+
+@media (max-width: 767px) {
+  /* --- 2カラムの図、サービスの流れ --- */
+  .service-col,
+  .flow {
+    flex-direction: column; /* スマホでは縦並び */
   }
-  100% {
-    transform: translateX(-50%);
+
+  /* --- 品目 --- */
+  ul.service-list {
+    grid-template-columns: repeat(2, 1fr); /* スマホでは2カラム */
   }
 }
-/* ---------- /マーキー ---------- */

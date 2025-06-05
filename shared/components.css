@@ -56,6 +56,29 @@ a:hover .icon-arrow {
 
 /* --- /べた塗り丸ボタン --- */
 
+/* --- シンプルボタン --- */
+.btn-simple {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  gap: 1em;
+}
+
+.btn-text {
+  font-size: 1rem;
+}
+
+.btn-simple__icon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* --- /シンプルボタン --- */
+
 /* --- くるっと一回転ボタン --- */
 .btn-flip {
   display: inline-flex;
@@ -110,7 +133,7 @@ a:hover .btn-flip__text--bottom {
   height: 600px; /* サイズ */
   background: radial-gradient(
     circle,
-    /* 色 */ rgba(173, 216, 230, 0.8),
+    /* 色 */ rgba(207, 193, 149, 0.8),
     /* 透明度 */ transparent 70%
   );
   border-radius: 50%;

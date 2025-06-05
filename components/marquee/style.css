@@ -3,16 +3,18 @@
   width: 100%; /* マーキーの横幅 */
   overflow: hidden;
   white-space: nowrap;
+  user-select: none;
 }
 
 .marquee {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee 15s linear infinite; /* スクロールのスピード */
+  animation: marquee 60s linear infinite; /* スクロールのスピード */
 }
 
 .marquee span {
-  font-size: 5rem; /* フォントサイズ */
+  font-size: 10rem; /* フォントサイズ */
+  line-height: 1;
 }
 
 @keyframes marquee {

@@ -5,9 +5,8 @@
 }
 
 /* リンクの装飾を削除 */
-a {
+a:hover {
   text-decoration: none;
-  color: inherit; /* 親要素の色を引き継ぐ */
 }
 
 /* 画像 */
@@ -23,18 +22,17 @@ img {
 body {
   font-size: 16px;
   line-height: 2.4;
-  /* フォント変更 */
-  font-family: "M PLUS Rounded 1c", sans-serif !important;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 /* スマホ用：画面幅768px以下でサイズダウン */
 @media (max-width: 767px) {
   body {
-    font-size: 14px; /* 例：少し小さく */
+    font-size: 15px; /* 例：少し小さく */
   }
 }
 
-.container {
+.inner {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -45,4 +43,9 @@ body {
 .full-bleed {
   margin-right: calc(50% - 50vw); /* 右を画面幅いっぱいに広げる */
   margin-left: calc(50% - 50vw); /* 左を画面幅いっぱいに広げる */
+}
+
+/* コンテナクエリの親要素 */
+.cq-inline {
+  container-type: inline-size;
 }

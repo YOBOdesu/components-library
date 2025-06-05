@@ -6,3 +6,39 @@
 p {
   font-size: var(--font-size-clamp);
 }
+
+/* コンテナクエリの親要素 */
+.cq-inline {
+  container-type: inline-size;
+}
+
+/* -------- 見出し -------- */
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold !important;
+}
+
+.styled_h2 {
+  font-size: var(--font-size-h2) !important;
+  text-align: center;
+  padding-bottom: 0.5em !important;
+  border-bottom: 5px solid #8fe04f;
+  margin: 1em 0 !important;
+}
+
+.styled_h3 {
+  font-size: var(--font-size-h3) !important;
+  padding: 0.5em 0.5em 0.5em 1em !important;
+  border-left: 5px solid #8fe04f;
+  margin: 1em 0 !important;
+}
+
+.heading-s {
+  font-size: 1.2rem !important;
+  padding: 1rem !important;
+  background-color: #8fe04f;
+  border-radius: 5px;
+}
+/* -------- /見出し -------- */

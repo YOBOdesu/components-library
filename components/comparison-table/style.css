@@ -1,0 +1,69 @@
+/* ---------- 比較表 ---------- */
+.comparison-table {
+  max-width: 800px; /* 最大幅 */
+  margin: 0 auto !important; /* 中央寄せ */
+  text-align: center;
+  table-layout: fixed;
+  font-size: var(--font-size-clamp); /* フォントサイズ */
+  border-collapse: separate;
+  border-spacing: 2px; /* セル同士の隙間 */
+}
+
+.comparison-table th,
+.comparison-table td {
+  line-height: 1.5 !important; /* 行間 */
+  padding: 0.5em !important;
+  border: none;
+}
+
+.comparison-table td {
+  width: 28%;
+}
+
+.comparison-table thead th:first-child {
+  visibility: hidden;
+}
+
+.comparison-table thead th,
+.comparison-table tbody th {
+  background-color: #8fe04f; /* ヘッダーの背景色 */
+}
+
+/* 会社の列 */
+.comparison-table .primary-col {
+  background-color: #ff6600 !important; /* ヘッダーの背景色 */
+  color: #fff; /* ヘッダーの文字色 */
+  font-size: 1.5em; /* フォントサイズ */
+  font-weight: 800;
+}
+
+/* ◎○△ */
+.grade {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* ◎だけオレンジに */
+td.good .grade {
+  color: #ff6600;
+}
+
+/* 行背景色 */
+.comparison-table tr.even td {
+  background-color: #fff;
+}
+
+.comparison-table tr.odd td {
+  background-color: #eee;
+}
+
+.comparison-table tr.even td.good {
+  background-color: #fffbbb;
+}
+
+.comparison-table tr.odd td.good {
+  background-color: #fff88e;
+}
+
+/* ---------- /比較表 ---------- */
